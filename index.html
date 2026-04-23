@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>weather App | Suman Kumari</title>
+  <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🌦 Weather App</h1>
+
+    <div class="search-box">
+        <input type="text" id="city" placeholder="Enter city..." inputmode="search">
+        <button onclick="getWeather()">Search</button>
+    </div>
+
+    <button onclick="getLocationWeather()" class="location-btn">
+        📍 Use My Location
+    </button>
+
+    <div class="weather-box" id="weatherBox" style="display: none;">
+        <h2 id="cityName"></h2>
+        <img id="icon" src="" alt="weather icon">
+        <p id="temp"></p>
+        <p id="desc"></p>
+        
+        <div class="details-grid">
+            <div class="detail-item">
+                <span>Humidity</span>
+                <p id="humidity"></p>
+            </div>
+            <div class="detail-item">
+                <span>Wind Speed</span>
+                <p id="wind"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script4.js"></script>
+  
+</body>
+
+</html>
